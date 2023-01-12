@@ -1,0 +1,11 @@
+list = [1,2,2,5,8,4,4,8,2,1,6]
+#Reverse the list [6, 1, 2, 8, 4, 4, 8, 5, 2, 2, 1]#
+list.reverse()
+print("Reversed List:",list)
+#turn the same again#
+list.reverse()
+
+#Change the value of the place 3 to 10#
+#[1, 2, 2, 10, 8, 4, 4, 8, 2, 1, 6]#
+list[3] = 10
+print(list)
