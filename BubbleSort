@@ -1,0 +1,26 @@
+a = [40, 10,25,25,15,15,20,40]
+
+def bubble_unique(a):
+    unique_list = []
+    for x in a:
+        if x not in unique_list:
+            unique_list.append(x)
+
+    return unique_list
+
+def bubble_sort(a):
+    lenght = len(a)
+    for i in range (lenght):
+        for j in range(lenght - 1):
+            if a[j] > a[j +1]: 
+                temp = a[j]
+                a[j] = a[j + 1]
+                a[j + 1] = temp
+                print(a)
+
+a = [40,10,25,15,15,20,40]
+print("Original list:", a)
+
+
+print(bubble_sort(bubble_unique(a)))
+
