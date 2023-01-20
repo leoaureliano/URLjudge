@@ -1,0 +1,9 @@
+class Vehicle:
+    def _init_ (self.wheels,has_engine,is_drivable,color):
+        self.wheels = wheels
+        self.has_engine = has_engine
+        self.is_drivable = is_drivable
+        self.color = "blue"
+
+def drive(self):
+    print("Driving...")
