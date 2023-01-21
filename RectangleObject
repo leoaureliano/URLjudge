@@ -1,0 +1,22 @@
+class Rectangle():
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
+    def perimeter(self):
+        return 2 * (self.width + self.height)
+
+    print(perimeter)
+
+    def area(self):
+        return self.width * self.height
+        print(area)
+
+    def display(self):
+        print("the length is: ", self.length)
+        print("the width is: ", self.width)
+        print("the perimiter is: ", self.perimiter())
+        print("the area is: ", self.area())
+
+
+Rectangle1 = Rectangle(10, 20)
