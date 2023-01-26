@@ -1,0 +1,16 @@
+numbers = [3, 5, 2, 4, 7, 1, 12, 8]
+
+#return the maximum number in the list using reduce()
+
+from functools import reduce
+
+max = reduce(lambda a, b: a if (a > b) else b, numbers)
+
+#return the minimum number in the list using reduce()
+
+min = reduce(lambda a, b: a if (a < b) else b, numbers)
+
+#return the prime numbers in the list using lambda
+
+prime = list(filter(lambda x: x > 1 and all(x % i for i in range(2, x)), numbers))
+print(prime)
